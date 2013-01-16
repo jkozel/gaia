@@ -155,6 +155,23 @@ ol.link-list a {
   width: calc(100% - 3rem);
 }
 
+#advanced-settings-view .account-list .button-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#advanced-settings-view .account-list .button-container a {
+  background-image: none;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+#advanced-settings-view .add-account {
+  text-align: center;
+  width: calc(100% - 6rem);
+  margin-bottom: 0;
+}
+
 #advanced-settings-view .preset:after {
   content: ' - '
 }

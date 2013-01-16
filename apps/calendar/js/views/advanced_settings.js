@@ -110,6 +110,11 @@
       var store = this.app.store('Account');
       var items = store.cached;
       var list = this.accountList;
+      var addAccountButton = list.getElementsByClassName('add-account')[0];
+      var addAccountItem = addAccountButton.parentNode;
+      while (addAccountItem && 'LI' != addAccountItem.nodeName) {
+        addAccountItem = addAccountItem.parentNode;
+      }
 
       var key;
       var result = '';
@@ -122,6 +127,10 @@
         }
       }
       list.innerHTML = result;
+
+      if (addAccountItem && 'LI' == addAccountItem.nodeName) {
+        list.appendChild(addAccountItem);
+      }
     }
   };
 
